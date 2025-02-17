@@ -1,0 +1,33 @@
+{
+    "name": "esp_jrnl",
+    "keywords": "FatFs journaling",
+    "description": "",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/haberturdeur/esp_jrnl.git"
+    },
+    "authors": [
+        {
+            "name": "Tomáš Rohlínek",
+            "email": "tomas.rohlinek@outlook.cz",
+            "maintainer": true
+        }
+    ],
+    "version": "1.0.1",
+    "frameworks": [
+        "arduino",
+        "espidf"
+    ],
+    "platforms": "espressif32",
+    "dependencies": [
+    ],
+    "build": {
+        "includeDir" : ".",
+        "flags" : [
+            "-I include",
+            "-I private_include",
+        ],
+        "srcDir" : "srcs"
+    }
+}
+
